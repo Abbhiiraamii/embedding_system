@@ -1,7 +1,5 @@
 # Capability Embedding and Composition System
 
-## Student Details
-
 **Name:** ABHIRAMI S
 **Roll No:** 3
 **Reg No:** TCR24CS003
