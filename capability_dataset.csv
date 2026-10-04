@@ -1,0 +1,9 @@
+capability,type,preconditions,effects,resources,cost,reliability,availability,risk
+CreateOrder,API,"CartExists,CartItemCountPositive","OrderExists,OrderCreated","Database,Network",1.0,0.99,1,0.1
+MakePayment,API,OrderExists,PaymentSuccess,"PaymentGateway,Network",2.0,0.98,1,0.2
+CancelCart,GUI,OrderDoesNotExist,CartCancelled,Network,1.0,0.95,1,0.1
+SendNotification,EVENT,OrderExists,NotificationSent,Network,1.5,0.97,1,0.1
+StoreOrder,DATABASE,OrderExists,OrderStored,Database,0.5,0.995,1,0.05
+CreateOrderGUI,GUI,"CartExists,CartItemCountPositive","OrderExists,OrderCreated",Network,1.5,0.96,1,0.15
+CreateOrderDatabase,DATABASE,"CartExists,CartItemCountPositive","OrderExists,OrderCreated",Database,0.4,0.995,1,0.05
+UpdateProfile,DATABASE,UserExists,ProfileUpdated,Database,0.5,0.99,1,0.05
